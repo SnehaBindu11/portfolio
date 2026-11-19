@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sneha Bindu Patapanchala | AI &amp; Data Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f3;--surface:#fff;--ink:#14202b;--muted:#506070;--line:#cfd7de;--accent:#2b4acb;--accent-ink:#fff;--teal:#0e8f8a;--soft:#e4e9fb;--soft2:#dff3f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171e;--surface:#17212b;--ink:#e8eef3;--muted:#9fb0bf;--line:#2c3a47;--accent:#8fa6ff;--accent-ink:#10171e;--teal:#5fd4cd;--soft:#1f2a4a;--soft2:#17332f}}
+:root[data-theme="dark"]{--bg:#10171e;--surface:#17212b;--ink:#e8eef3;--muted:#9fb0bf;--line:#2c3a47;--accent:#8fa6ff;--accent-ink:#10171e;--teal:#5fd4cd;--soft:#1f2a4a;--soft2:#17332f}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,nav,.sans{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:6px 20px;flex-wrap:wrap;padding:14px 5vw;background:var(--bg);border-bottom:1px solid var(--line);font-size:15px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+nav b{margin-right:auto;font-weight:800}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
+#grains{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;opacity:.9}
+.hero .in{position:relative;width:100%;padding:12vh 5vw 6vh;background:linear-gradient(to top,var(--bg) 55%,transparent)}
+h1{font-size:clamp(40px,8vw,96px);line-height:.98;margin:0 0 18px;font-weight:800;letter-spacing:-.02em;max-width:12em}
+.lead{max-width:36em;font-size:21px;color:var(--ink);margin:0 0 24px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font:600 16px "Bricolage Grotesque",sans-serif;padding:12px 22px;border-radius:6px;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.cap{position:absolute;top:14px;right:5vw;font:13px "Bricolage Grotesque",sans-serif;color:var(--muted);background:var(--bg);padding:3px 8px;border-radius:4px}
+
+main{max-width:1080px;margin:0 auto;padding:0 5vw}
+section{padding:88px 0 0}
+.sh{display:flex;align-items:center;gap:16px;margin:0 0 36px}
+.sh h2{font-size:clamp(30px,4.5vw,46px);margin:0;letter-spacing:-.02em;line-height:1.1}
+.sh i{flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--teal),transparent)}
+.meta{color:var(--muted);font-size:15px;font-family:"Bricolage Grotesque",sans-serif}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px -18px rgba(20,32,43,.35);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -18px rgba(43,74,203,.45)}
+
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start}
+.about p{margin:0;font-size:20px;max-width:34em}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.facts div{border-radius:14px;padding:16px 18px;background:var(--soft)}
+.facts div:nth-child(2n){background:var(--soft2)}
+.facts b{display:block;font:800 26px "Bricolage Grotesque",sans-serif;line-height:1.1}
+.facts span{font:500 14px "Bricolage Grotesque",sans-serif;color:var(--muted)}
+
+.tl{position:relative;margin:0;padding:0 0 0 34px;list-style:none}
+.tl:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:3px;border-radius:3px;background:linear-gradient(var(--accent),var(--teal))}
+.tl>li{position:relative;margin-bottom:26px}
+.tl>li:before{content:"";position:absolute;left:-34px;top:30px;width:21px;height:21px;border-radius:50%;background:var(--bg);border:5px solid var(--accent)}
+.tl>li:nth-child(2):before{border-color:var(--teal)}
+.org{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;align-items:baseline;margin-bottom:10px}
+.org h3{margin:0;font-size:24px}
+.pill{font:600 13px "Bricolage Grotesque",sans-serif;padding:3px 12px;border-radius:20px;background:var(--soft);color:var(--accent)}
+.card ul{margin:0;padding-left:20px}
+.card li{margin-bottom:8px;max-width:44em}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.proj{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.band{height:92px;background:linear-gradient(135deg,var(--accent),var(--teal));position:relative}
+.band:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.14) 0 2px,transparent 2px 26px),repeating-linear-gradient(-30deg,rgba(255,255,255,.1) 0 2px,transparent 2px 34px)}
+.band.b2{background:linear-gradient(135deg,var(--teal),var(--accent))}
+.pb{padding:24px 28px 28px}
+.pb h3{margin:0 0 4px;font-size:22px;line-height:1.2}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;padding:0;list-style:none}
+.tags li{font:500 13px "Bricolage Grotesque",sans-serif;background:var(--bg);border:1px solid var(--line);padding:2px 10px;border-radius:20px;margin:0}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skills h3{margin:0 0 14px;font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font:600 14px "Bricolage Grotesque",sans-serif;padding:5px 13px;border-radius:20px;background:var(--soft);color:var(--ink);margin:0}
+.skills .card:nth-child(2n) .chips li{background:var(--soft2)}
+
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.edu .card{border-top:5px solid var(--accent)}
+.edu .card:nth-child(2){border-top-color:var(--teal)}
+.edu .card:nth-child(3){border-top-color:var(--ink)}
+.edu h3{margin:0 0 4px;font-size:19px}
+.edu .score{font:800 34px "Bricolage Grotesque",sans-serif;color:var(--accent);margin-top:10px;line-height:1}
+.edu p{margin:6px 0 0;font-size:16px;color:var(--muted)}
+
+.rec h3{margin:0 0 12px;font-size:19px}
+.rec ul{padding-left:20px}
+
+.cta{margin-top:88px;border-radius:24px;padding:clamp(32px,6vw,64px);background:linear-gradient(135deg,#1c2f9a,#0e8f8a);color:#fff;position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.08) 0 2px,transparent 2px 40px)}
+.cta>*{position:relative;z-index:1}
+.cta h2{font-size:clamp(30px,5vw,52px);margin:0 0 12px;line-height:1.1;letter-spacing:-.02em}
+.cta p{margin:0 0 26px;max-width:32em;font-size:20px}
+.cta .btn{background:#fff;color:#14202b;border-color:#fff}
+.cta .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+footer{padding:48px 5vw;text-align:center;color:var(--muted);font-size:15px}
+@media(max-width:760px){.about{grid-template-columns:1fr}body{font-size:17px}.about p{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><b>Sneha Bindu</b><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<canvas id="grains" aria-hidden="true"></canvas>
+<span class="cap">Generated grain structure, like the SEM images from my DRDO work</span>
+<div class="in">
+<h1>Sneha Bindu Patapanchala</h1>
+<p class="lead">AI &amp; Data Science student who turns messy data and images into models people can trust, from titanium alloy microscopy at DRDO to kidney transplant risk prediction.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+</header>
+
+<main>
+<section id="about">
+<div class="sh"><h2>About me</h2><i></i></div>
+<div class="about">
+<p>I’m a B.Tech student in Artificial Intelligence and Data Science at Lakireddy Bali Reddy College of Engineering, Mylavaram. I work in Python on machine learning, computer vision and data analysis, and I care about models that can explain their predictions. Beyond coursework, I serve as Secretary of the Spoorthi Club and a member of the Student Council.</p>
+<div class="facts">
+<div><b>8.34</b><span>B.Tech CGPA</span></div>
+<div><b>2</b><span>Internships</span></div>
+<div><b>2</b><span>ML and web projects</span></div>
+<div><b>2nd</b><span>Prize, LBRCE hackathon</span></div>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<div class="sh"><h2>Experience</h2><i></i></div>
+<ol class="tl">
+<li><div class="card">
+<div class="org"><h3>DRDO <span class="meta">· Research Intern, Bangalore</span></h3><span class="pill">May – June 2026</span></div>
+<ul>
+<li>Studied titanium alloy microstructures and how they relate to aerospace material properties.</li>
+<li>Built a computer vision pipeline to preprocess SEM images and extract texture and shape features, using Python, OpenCV and Scikit-learn.</li>
+<li>Supported machine learning model development for phase classification and material characterization.</li>
+</ul></div></li>
+<li><div class="card">
+<div class="org"><h3>APSSDC <span class="meta">· Data Analyst Intern, Remote</span></h3><span class="pill">May – July 2025</span></div>
+<ul>
+<li>Analyzed Andhra Pradesh election data to find voter behavior and party performance trends.</li>
+<li>Cleaned and visualized constituency and candidate data with Pandas, Matplotlib and Seaborn, surfacing vote shares and victory margins.</li>
+</ul></div></li>
+</ol>
+</section>
+
+<section id="projects">
+<div class="sh"><h2>Projects</h2><i></i></div>
+<div class="grid2">
+<article class="card proj">
+<div class="band"></div>
+<div class="pb">
+<span class="pill">April 2026</span>
+<h3 style="margin-top:12px">Kidney Transplant Graft Survival Prediction</h3>
+<ul class="tags"><li>Python</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>MICE</li><li>SMOTE</li></ul>
+<ul>
+<li>Built an ensemble machine learning pipeline on UNOS STAR registry data to predict 5-year kidney graft failure risk.</li>
+<li>Used SHAP for patient-level explanations, identifying donor age, HLA mismatch and cold ischemia time as key predictors of graft failure.</li>
+</ul></div>
+</article>
+<article class="card proj">
+<div class="band b2"></div>
+<div class="pb">
+<span class="pill">May 2026</span>
+<h3 style="margin-top:12px">SkillSync AI: Resume and Job Matching</h3>
+<ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>NLP</li></ul>
+<ul>
+<li>Built a web app that uses NLP to match resumes against job descriptions and flag skill gaps.</li>
+<li>Delivers ATS-compatible scoring, keyword matching and personalized suggestions, plus downloadable PDF reports.</li>
+<li><a href="https://github.com/SnehaBindu11">View on GitHub</a></li>
+</ul></div>
+</article>
+</div>
+</section>
+
+<section id="skills">
+<div class="sh"><h2>Skills</h2><i></i></div>
+<div class="skills">
+<div class="card"><h3>Programming</h3><ul class="chips"><li>Python</li><li>Java</li><li>C</li></ul></div>
+<div class="card"><h3>Web</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+<div class="card"><h3>Databases</h3><ul class="chips"><li>SQL</li></ul></div>
+<div class="card"><h3>Data and ML</h3><ul class="chips"><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>OpenCV</li><li>NLP</li></ul></div>
+</div>
+</section>
+
+<section id="education">
+<div class="sh"><h2>Education</h2><i></i></div>
+<div class="edu">
+<div class="card"><h3>B.Tech, AI &amp; Data Science</h3><p>Lakireddy Bali Reddy College of Engineering</p><div class="score">8.34</div><p>CGPA · Pursuing</p></div>
+<div class="card"><h3>Intermediate</h3><p>Sri Bhavishya Junior College</p><div class="score">9.09</div><p>CGPA · March 2023</p></div>
+<div class="card"><h3>S.S.C</h3><p>Bhashyam EM High School</p><div class="score">10</div><p>CGPA · June 2021</p></div>
+</div>
+</section>
+
+<section id="more">
+<div class="sh"><h2>Recognition and leadership</h2><i></i></div>
+<div class="grid2">
+<div class="card rec"><h3>Certifications</h3><ul>
+<li>Infosys Springboard, HTML (Apr 2025)</li>
+<li>Infosys Springboard, Python Fundamentals (Oct 2024)</li>
+<li>HackerRank, Java Basic (Oct 2024)</li></ul></div>
+<div class="card rec"><h3>Achievements</h3><ul>
+<li>Second prize, hackathon at LBRCE</li>
+<li>Second prize, painting competition at LBRCE</li></ul></div>
+<div class="card rec"><h3>Positions of responsibility</h3><ul>
+<li>Secretary, Spoorthi Club, LBRCE (Aug 2025 – Aug 2026)</li>
+<li>Student Member, Student Council, LBRCE (Aug 2025 – Aug 2026)</li></ul></div>
+</div>
+</section>
+
+<section id="contact" style="padding-top:0">
+<div class="cta">
+<h2>Let’s work together</h2>
+<p>I’m open to internships and entry-level roles in machine learning and data science. Send me a message and I’ll reply soon.</p>
+<div class="btns">
+<a class="btn" href="mailto:psnehabindu11@gmail.com">Email me</a>
+<a class="btn o" href="https://linkedin.com/in/snehabindu-patapanchala-1a3947294">LinkedIn</a>
+<a class="btn o" href="https://github.com/SnehaBindu11">GitHub</a>
+<a class="btn o" href="tel:+917416429111">+91-7416429111</a>
+</div></div>
+</section>
+</main>
+<footer>© 2026 Sneha Bindu Patapanchala</footer>
+
+<script>
+(function(){
+var c=document.getElementById('grains'),W=180,H=110;c.width=W;c.height=H;
+var x=c.getContext('2d'),n=70,s=[],i,px,py;
+var dark=matchMedia('(prefers-color-scheme:dark)').matches&&document.documentElement.dataset.theme!=='light';
+for(i=0;i<n;i++)s.push([Math.random()*W,Math.random()*H,Math.random()]);
+var id=new Int16Array(W*H),img=x.createImageData(W,H);
+for(py=0;py<H;py++)for(px=0;px<W;px++){var b=0,bd=1e9;
+for(i=0;i<n;i++){var dx=px-s[i][0],dy=py-s[i][1],d=dx*dx+dy*dy;if(d<bd){bd=d;b=i}}
+id[py*W+px]=b}
+for(py=0;py<H;py++)for(px=0;px<W;px++){var k=py*W+px,g=id[k],edge=(px<W-1&&id[k+1]!==g)||(py<H-1&&id[k+W]!==g);
+var v=dark?(edge?20:40+s[g][2]*50):(edge?120:200+s[g][2]*40);
+var o=k*4;img.data[o]=v*.93;img.data[o+1]=v*.97;img.data[o+2]=v;img.data[o+3]=255}
+x.putImageData(img,0,0);
+})();
+</script>
+</body>
+</html>
