@@ -115,6 +115,19 @@ nav a.on{color:var(--accent);box-shadow:0 2px 0 var(--accent)}
 .chips li,.tags li{transition:transform .2s,background .2s}.chips li:hover,.tags li:hover{transform:translateY(-3px) scale(1.06);background:var(--soft2)}
 .tl>li:hover::before{animation:ping .9s}@keyframes ping{50%{box-shadow:0 0 0 10px rgba(43,74,203,.25)}}
 @media(prefers-reduced-motion:reduce){.blob,.photo,.typed,.stage,.hero>div:not(.stage)>*,.rv.on .grid>*,.rv.on .grid2>*,.rv.on .steps>li,.rv.on .tl>li{animation:none!important}#glow{display:none}.js .sh i{transform:none;transition:none}.js .rv:not(.on) .grid>*,.js .rv:not(.on) .grid2>*,.js .rv:not(.on) .steps>li,.js .rv:not(.on) .tl>li{opacity:1}}
+#thx{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(10,14,28,.6);backdrop-filter:blur(6px)}
+#thx.open{display:grid;animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.thx-box{background:var(--surface);color:var(--ink);border-radius:24px;padding:36px 30px;max-width:420px;width:100%;text-align:center;box-shadow:0 30px 80px -20px rgba(0,0,0,.6);animation:pop .55s cubic-bezier(.2,1.3,.3,1)}
+@keyframes pop{from{opacity:0;transform:scale(.8) translateY(20px)}}
+.thx-box svg{width:84px;height:84px;margin-bottom:10px}
+.thx-box circle,.thx-box path{fill:none;stroke:var(--teal);stroke-linecap:round;stroke-linejoin:round}
+.thx-box circle{stroke-width:5;stroke-dasharray:226;stroke-dashoffset:226;animation:dr .7s .15s forwards}
+.thx-box path{stroke-width:6;stroke-dasharray:60;stroke-dashoffset:60;animation:dr .5s .65s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.thx-box h3{font:800 28px "Bricolage Grotesque",sans-serif;margin:0 0 8px}
+.thx-box p{margin:0 0 22px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){#thx.open,.thx-box,.thx-box circle,.thx-box path{animation:none!important}.thx-box circle,.thx-box path{stroke-dashoffset:0}}
 @media(max-width:800px){.hero,.about,.cta{grid-template-columns:1fr}.stage{order:-1;height:340px}body{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
 </style>
@@ -221,7 +234,7 @@ nav a.on{color:var(--accent);box-shadow:0 2px 0 var(--accent)}
 <section id="contact" style="padding-top:0">
 <div class="cta">
 <div><h2>Let’s build something together</h2><p>Hiring for an internship, or have a freelance project in mind? Send me a note and I’ll reply soon.</p>
-<div class="btns"><a class="btn w" href="mailto:psnehabindu11@gmail.com">psnehabindu11@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sneha-bindu-patapanchala-0a136939b/" target="blank">LinkedIn</a><a class="btn" href="https://github.com/SnehaBindu11 target="blank"  ">GitHub</a></div></div>
+<div class="btns"><a class="btn w" href="mailto:psnehabindu11@gmail.com">psnehabindu11@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sneha-bindu-patapanchala-0a136939b/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/SnehaBindu11" target="_blank" rel="noopener">GitHub</a></div></div>
 <div class="fm">
 <label>Your name<input id="fn" autocomplete="name"></label>
 <label>Your email<input id="fe" type="email" autocomplete="email"></label>
@@ -234,6 +247,7 @@ nav a.on{color:var(--accent);box-shadow:0 2px 0 var(--accent)}
 </div>
 </section>
 </main>
+<div id="thx" role="dialog" aria-modal="true" aria-labelledby="thxt" aria-hidden="true"><div class="thx-box"><svg viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="36"/><path d="M26 44l12 12 22-26"/></svg><h3 id="thxt">Thanks for contacting us!</h3><p>We will text you soon.</p><button class="btn p" type="button" id="thxc">Close</button></div></div>
 <footer>© 2026 Sneha Bindu Patapanchala · AI &amp; Data Science</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -247,8 +261,12 @@ if(f('hp').value)return;
 if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){s.textContent='Please fill in your name, a valid email and a message.';return}
 b.disabled=true;s.textContent='Sending…';
 fetch('https://formsubmit.co/ajax/psnehabindu11@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({name:n,email:e,_replyto:e,_subject:'Portfolio message: '+t,topic:t,message:m,_template:'table',_captcha:'false'})})
-.then(function(r){return r.json()}).then(function(d){if(d.success==='true'||d.success===true){s.textContent='Thank you! Your message was sent.';f('fn').value=f('fe').value=f('fmsg').value=''}else throw 0})
+.then(function(r){return r.json()}).then(function(d){if(d.success==='true'||d.success===true){s.textContent='Thank you! Your message was sent.';showThanks();f('fn').value=f('fe').value=f('fmsg').value=''}else throw 0})
 .catch(function(){s.textContent='Could not send directly, so I opened your email app instead.';legacy()}).then(function(){b.disabled=false})}
+function showThanks(){var d=document.getElementById('thx'),c=document.getElementById('thxc');d.classList.add('open');d.setAttribute('aria-hidden','false');c.focus();
+function k(e){if(e.key==='Escape')close()}
+function close(){d.classList.remove('open');d.setAttribute('aria-hidden','true');document.removeEventListener('keydown',k);document.getElementById('send').focus()}
+document.addEventListener('keydown',k);c.onclick=close;d.onclick=function(e){if(e.target===d)close()}}
 function legacy(){var n=document.getElementById('fn').value,t=document.getElementById('ft').value,m=document.getElementById('fmsg').value;
 location.href='mailto:psnehabindu11@gmail.com?subject='+encodeURIComponent(t+' – '+n)+'&body='+encodeURIComponent(m+'\n\n'+n)};
 var io=window.IntersectionObserver&&new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08});
