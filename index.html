@@ -3,179 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sneha Bindu Patapanchala | AI &amp; Data Science</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="description" content="Sneha Bindu Patapanchala: AI and Data Science student, DRDO research intern, available for freelance machine learning, data analysis and web projects.">
+<title>Sneha Bindu Patapanchala | AI &amp; Data Science · Freelance</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eef1f3;--surface:#fff;--ink:#14202b;--muted:#506070;--line:#cfd7de;--accent:#2b4acb;--accent-ink:#fff;--teal:#0e8f8a;--soft:#e4e9fb;--soft2:#dff3f1;
+:root{--bg:#eef1f6;--surface:#fff;--ink:#121a2b;--muted:#53607a;--line:#d3dae6;--accent:#2b4acb;--accent-ink:#fff;--teal:#0e8f8a;--rose:#c2306b;--ochre:#c98a12;--soft:#e4e9fb;--soft2:#dff3f1;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10171e;--surface:#17212b;--ink:#e8eef3;--muted:#9fb0bf;--line:#2c3a47;--accent:#8fa6ff;--accent-ink:#10171e;--teal:#5fd4cd;--soft:#1f2a4a;--soft2:#17332f}}
-:root[data-theme="dark"]{--bg:#10171e;--surface:#17212b;--ink:#e8eef3;--muted:#9fb0bf;--line:#2c3a47;--accent:#8fa6ff;--accent-ink:#10171e;--teal:#5fd4cd;--soft:#1f2a4a;--soft2:#17332f}
-html{scroll-padding-top:70px;scroll-behavior:smooth}
-*{box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1420;--surface:#161e2e;--ink:#e9eef8;--muted:#9fb0c8;--line:#2a364b;--accent:#8fa6ff;--accent-ink:#0e1420;--teal:#5fd4cd;--rose:#ff7fae;--ochre:#f0b84a;--soft:#1e2a4d;--soft2:#17332f}}
+:root[data-theme="dark"]{--bg:#0e1420;--surface:#161e2e;--ink:#e9eef8;--muted:#9fb0c8;--line:#2a364b;--accent:#8fa6ff;--accent-ink:#0e1420;--teal:#5fd4cd;--rose:#ff7fae;--ochre:#f0b84a;--soft:#1e2a4d;--soft2:#17332f}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 "Source Serif 4",Georgia,serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:20}
 h1,h2,h3,nav,.sans{font-family:"Bricolage Grotesque",system-ui,sans-serif}
 a{color:var(--accent)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-nav{position:sticky;top:0;z-index:5;display:flex;gap:6px 20px;flex-wrap:wrap;padding:14px 5vw;background:var(--bg);border-bottom:1px solid var(--line);font-size:15px;font-weight:500}
-nav a{color:var(--ink);text-decoration:none}
-nav a:hover{color:var(--accent)}
-nav b{margin-right:auto;font-weight:800}
-.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
-#grains{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;opacity:.9}
-.hero .in{position:relative;width:100%;padding:12vh 5vw 6vh;background:linear-gradient(to top,var(--bg) 55%,transparent)}
-h1{font-size:clamp(40px,8vw,96px);line-height:.98;margin:0 0 18px;font-weight:800;letter-spacing:-.02em;max-width:12em}
-.lead{max-width:36em;font-size:21px;color:var(--ink);margin:0 0 24px}
+a:focus-visible,button:focus-visible,.stage:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;gap:6px 22px;flex-wrap:wrap;align-items:center;padding:13px 5vw;background:var(--bg);border-bottom:1px solid var(--line);font-size:15px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}nav a:hover{color:var(--accent)}
+nav b{margin-right:auto;font-weight:800;font-size:17px}
+#theme{font:600 13px "Bricolage Grotesque",sans-serif;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:5px 12px;cursor:pointer}
+main{max-width:1100px;margin:0 auto;padding:0 5vw}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:center;padding:56px 0 24px}
+.badge{display:inline-flex;gap:8px;align-items:center;font:600 13px "Bricolage Grotesque",sans-serif;background:var(--soft2);padding:5px 14px;border-radius:20px;margin-bottom:18px}
+.badge i{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(14,143,138,.25)}
+h1{font-size:clamp(40px,6.5vw,76px);line-height:1;margin:0 0 8px;font-weight:800;letter-spacing:-.025em}
+.role{font:700 clamp(18px,2.4vw,24px) "Bricolage Grotesque",sans-serif;color:var(--accent);margin:0 0 16px}
+.lead{max-width:33em;font-size:20px;margin:0 0 26px;color:var(--muted)}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{font:600 16px "Bricolage Grotesque",sans-serif;padding:12px 22px;border-radius:6px;text-decoration:none;border:2px solid var(--accent)}
+.btn{font:600 16px "Bricolage Grotesque",sans-serif;padding:12px 22px;border-radius:8px;text-decoration:none;border:2px solid var(--accent);cursor:pointer;background:none;color:var(--accent)}
 .btn.p{background:var(--accent);color:var(--accent-ink)}
-.cap{position:absolute;top:14px;right:5vw;font:13px "Bricolage Grotesque",sans-serif;color:var(--muted);background:var(--bg);padding:3px 8px;border-radius:4px}
-
-main{max-width:1080px;margin:0 auto;padding:0 5vw}
-section{padding:88px 0 0}
-.sh{display:flex;align-items:center;gap:16px;margin:0 0 36px}
-.sh h2{font-size:clamp(30px,4.5vw,46px);margin:0;letter-spacing:-.02em;line-height:1.1}
+.stage{position:relative;height:clamp(340px,46vw,500px);touch-action:pan-y;cursor:grab;display:grid;place-items:center;border-radius:24px;outline-offset:0}
+.stage:active{cursor:grabbing}
+#gl{position:absolute;inset:0;width:100%;height:100%}
+.photo{position:relative;z-index:1;margin:0;width:clamp(170px,19vw,232px);aspect-ratio:4/5;border-radius:26px;overflow:hidden;border:6px solid var(--surface);box-shadow:0 24px 50px -20px rgba(18,26,43,.55);background:linear-gradient(150deg,var(--soft),var(--soft2));pointer-events:none}
+.photo svg{position:absolute;inset:0;width:100%;height:100%}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hint{position:absolute;bottom:6px;left:0;right:0;text-align:center;font:500 13px "Bricolage Grotesque",sans-serif;color:var(--muted);pointer-events:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:8px 0 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font:800 30px "Bricolage Grotesque",sans-serif;color:var(--accent);line-height:1.1}
+.stat span{font:500 14px "Bricolage Grotesque",sans-serif;color:var(--muted)}
+section{padding:84px 0 0}
+.sh{display:flex;align-items:center;gap:16px;margin:0 0 34px}
+.sh h2{font-size:clamp(30px,4.5vw,44px);margin:0;letter-spacing:-.02em;line-height:1.1}
 .sh i{flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--teal),transparent)}
-.meta{color:var(--muted);font-size:15px;font-family:"Bricolage Grotesque",sans-serif}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px -18px rgba(20,32,43,.35);transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -18px rgba(43,74,203,.45)}
-
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 10px 30px -20px rgba(18,26,43,.4);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -20px rgba(43,74,203,.5)}
+.card h3{margin:0 0 8px;font-size:21px;line-height:1.2}
+.card p{margin:0;color:var(--muted);font-size:17px}
+.card ul{margin:0;padding-left:20px}.card li{margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
 .about{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start}
-.about p{margin:0;font-size:20px;max-width:34em}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.facts div{border-radius:14px;padding:16px 18px;background:var(--soft)}
-.facts div:nth-child(2n){background:var(--soft2)}
-.facts b{display:block;font:800 26px "Bricolage Grotesque",sans-serif;line-height:1.1}
-.facts span{font:500 14px "Bricolage Grotesque",sans-serif;color:var(--muted)}
-
+.about p{margin:0 0 16px;font-size:19.5px}
+.pill{display:inline-block;font:600 13px "Bricolage Grotesque",sans-serif;padding:3px 12px;border-radius:20px;background:var(--soft);color:var(--accent)}
+.meta{color:var(--muted);font:500 15px "Bricolage Grotesque",sans-serif}
 .tl{position:relative;margin:0;padding:0 0 0 34px;list-style:none}
-.tl:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:3px;border-radius:3px;background:linear-gradient(var(--accent),var(--teal))}
-.tl>li{position:relative;margin-bottom:26px}
-.tl>li:before{content:"";position:absolute;left:-34px;top:30px;width:21px;height:21px;border-radius:50%;background:var(--bg);border:5px solid var(--accent)}
-.tl>li:nth-child(2):before{border-color:var(--teal)}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:3px;border-radius:3px;background:linear-gradient(var(--accent),var(--teal))}
+.tl>li{position:relative;margin-bottom:24px}
+.tl>li::before{content:"";position:absolute;left:-34px;top:30px;width:21px;height:21px;border-radius:50%;background:var(--bg);border:5px solid var(--accent)}
+.tl>li:nth-child(2)::before{border-color:var(--teal)}
 .org{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;align-items:baseline;margin-bottom:10px}
-.org h3{margin:0;font-size:24px}
-.pill{font:600 13px "Bricolage Grotesque",sans-serif;padding:3px 12px;border-radius:20px;background:var(--soft);color:var(--accent)}
-.card ul{margin:0;padding-left:20px}
-.card li{margin-bottom:8px;max-width:44em}
-
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
-.proj{padding:0;overflow:hidden;display:flex;flex-direction:column}
-.band{height:92px;background:linear-gradient(135deg,var(--accent),var(--teal));position:relative}
-.band:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.14) 0 2px,transparent 2px 26px),repeating-linear-gradient(-30deg,rgba(255,255,255,.1) 0 2px,transparent 2px 34px)}
-.band.b2{background:linear-gradient(135deg,var(--teal),var(--accent))}
-.pb{padding:24px 28px 28px}
-.pb h3{margin:0 0 4px;font-size:22px;line-height:1.2}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;padding:0;list-style:none}
-.tags li{font:500 13px "Bricolage Grotesque",sans-serif;background:var(--bg);border:1px solid var(--line);padding:2px 10px;border-radius:20px;margin:0}
-
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.skills h3{margin:0 0 14px;font-size:18px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
-.chips li{font:600 14px "Bricolage Grotesque",sans-serif;padding:5px 13px;border-radius:20px;background:var(--soft);color:var(--ink);margin:0}
-.skills .card:nth-child(2n) .chips li{background:var(--soft2)}
-
-.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.edu .card{border-top:5px solid var(--accent)}
-.edu .card:nth-child(2){border-top-color:var(--teal)}
-.edu .card:nth-child(3){border-top-color:var(--ink)}
-.edu h3{margin:0 0 4px;font-size:19px}
-.edu .score{font:800 34px "Bricolage Grotesque",sans-serif;color:var(--accent);margin-top:10px;line-height:1}
-.edu p{margin:6px 0 0;font-size:16px;color:var(--muted)}
-
-.rec h3{margin:0 0 12px;font-size:19px}
-.rec ul{padding-left:20px}
-
-.cta{margin-top:88px;border-radius:24px;padding:clamp(32px,6vw,64px);background:linear-gradient(135deg,#1c2f9a,#0e8f8a);color:#fff;position:relative;overflow:hidden}
-.cta:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.08) 0 2px,transparent 2px 40px)}
+.tags,.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:0;list-style:none}
+.tags li,.chips li{font:600 13px "Bricolage Grotesque",sans-serif;background:var(--bg);border:1px solid var(--line);padding:3px 11px;border-radius:20px;margin:0}
+.chips li{background:var(--soft);border-color:transparent;font-size:14px;padding:5px 13px}
+.proj{padding:0;overflow:hidden}
+.band{height:84px;background:linear-gradient(135deg,var(--accent),var(--teal));position:relative}
+.band::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.15) 0 2px,transparent 2px 26px),repeating-linear-gradient(-30deg,rgba(255,255,255,.1) 0 2px,transparent 2px 34px)}
+.b2{background:linear-gradient(135deg,var(--rose),var(--accent))}
+.pb{padding:22px 26px 26px}
+.svc .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--soft);margin-bottom:14px}
+.svc:nth-child(2n) .ic{background:var(--soft2)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.steps li::before{content:"0" counter(s);font:800 28px "Bricolage Grotesque",sans-serif;color:var(--rose);display:block}
+.steps b{font-family:"Bricolage Grotesque",sans-serif}
+.steps span{display:block;color:var(--muted);font-size:16px}
+.edu .card{border-top:5px solid var(--accent)}.edu .card:nth-child(2){border-top-color:var(--teal)}.edu .card:nth-child(3){border-top-color:var(--ink)}
+.score{font:800 34px "Bricolage Grotesque",sans-serif;color:var(--accent);margin-top:10px;line-height:1}
+.cta{margin-top:84px;border-radius:24px;padding:clamp(28px,5vw,56px);background:linear-gradient(135deg,#1c2f9a,#0e8f8a);color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:32px;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(60deg,rgba(255,255,255,.07) 0 2px,transparent 2px 40px);pointer-events:none}
 .cta>*{position:relative;z-index:1}
-.cta h2{font-size:clamp(30px,5vw,52px);margin:0 0 12px;line-height:1.1;letter-spacing:-.02em}
-.cta p{margin:0 0 26px;max-width:32em;font-size:20px}
-.cta .btn{background:#fff;color:#14202b;border-color:#fff}
-.cta .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
-footer{padding:48px 5vw;text-align:center;color:var(--muted);font-size:15px}
-@media(max-width:760px){.about{grid-template-columns:1fr}body{font-size:17px}.about p{font-size:18px}}
-@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}html{scroll-behavior:auto}}
+.cta h2{font-size:clamp(30px,4.5vw,46px);margin:0 0 12px;line-height:1.1}
+.cta p{margin:0 0 22px;font-size:19px}
+.cta .btn{border-color:rgba(255,255,255,.7);color:#fff;margin:0}.cta .btn.w{background:#fff;color:#121a2b;border-color:#fff}
+.fm{background:rgba(255,255,255,.12);border-radius:16px;padding:22px;display:grid;gap:12px}
+.fm label{font:600 14px "Bricolage Grotesque",sans-serif}
+.fm input,.fm select,.fm textarea{width:100%;margin-top:4px;padding:10px 12px;border-radius:8px;border:0;font:16px "Source Serif 4",serif;background:#fff;color:#121a2b}
+footer{padding:46px 5vw;text-align:center;color:var(--muted);font-size:15px}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .rv.on{opacity:1;transform:none}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--accent),var(--teal),var(--rose));z-index:30}
+nav a.on{color:var(--accent);box-shadow:0 2px 0 var(--accent)}
+.hero{position:relative;isolation:isolate}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.3;pointer-events:none;z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+.b1{width:340px;height:340px;background:var(--accent);top:-40px;left:-90px}
+.bb{width:300px;height:300px;background:var(--teal);right:-60px;bottom:-40px;animation-duration:18s}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.25)}}
+@keyframes up{from{opacity:0;transform:translateY(28px)}}
+.hero>div:not(.stage)>*{animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+.hero>div:not(.stage)>:nth-child(2){animation-delay:.12s}.hero>div:not(.stage)>:nth-child(3){animation-delay:.24s}.hero>div:not(.stage)>:nth-child(4){animation-delay:.36s}.hero>div:not(.stage)>:nth-child(5){animation-delay:.48s}
+.stage{animation:up 1.2s .3s cubic-bezier(.2,.8,.2,1) both}
+@keyframes bob{50%{transform:translateY(-12px) rotate(1.5deg)}}
+.photo{animation:bob 6s ease-in-out infinite}
+.typed{border-right:3px solid var(--rose);padding-right:4px;animation:caret .8s steps(1) infinite}
+@keyframes caret{50%{border-color:transparent}}
+#glow{position:fixed;left:0;top:0;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,var(--soft),transparent 65%);pointer-events:none;z-index:0;opacity:0;transition:opacity .4s}
+.btn{transition:transform .25s cubic-bezier(.2,.8,.2,1),background .2s}
+.js .sh i{transform:scaleX(0);transform-origin:left;transition:transform 1.1s .25s}.js .on .sh i{transform:none}
+.js .rv:not(.on) .grid>*,.js .rv:not(.on) .grid2>*,.js .rv:not(.on) .steps>li,.js .rv:not(.on) .tl>li{opacity:0}
+.rv.on .grid>*,.rv.on .grid2>*,.rv.on .steps>li,.rv.on .tl>li{animation:up .8s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--i,0)*100ms + 150ms)}
+.chips li,.tags li{transition:transform .2s,background .2s}.chips li:hover,.tags li:hover{transform:translateY(-3px) scale(1.06);background:var(--soft2)}
+.tl>li:hover::before{animation:ping .9s}@keyframes ping{50%{box-shadow:0 0 0 10px rgba(43,74,203,.25)}}
+@media(prefers-reduced-motion:reduce){.blob,.photo,.typed,.stage,.hero>div:not(.stage)>*,.rv.on .grid>*,.rv.on .grid2>*,.rv.on .steps>li,.rv.on .tl>li{animation:none!important}#glow{display:none}.js .sh i{transform:none;transition:none}.js .rv:not(.on) .grid>*,.js .rv:not(.on) .grid2>*,.js .rv:not(.on) .steps>li,.js .rv:not(.on) .tl>li{opacity:1}}
+@media(max-width:800px){.hero,.about,.cta{grid-template-columns:1fr}.stage{order:-1;height:340px}body{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<nav aria-label="Sections"><b>Sneha Bindu</b><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
-
-<header class="hero">
-<canvas id="grains" aria-hidden="true"></canvas>
-<span class="cap">Generated grain structure, like the SEM images from my DRDO work</span>
-<div class="in">
+<div id="bar"></div><div id="glow"></div>
+<nav aria-label="Sections"><b>Sneha Bindu</b><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#services">Freelance</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button></nav>
+<main>
+<header class="hero"><i class="blob b1" aria-hidden="true"></i><i class="blob bb" aria-hidden="true"></i>
+<div>
+<span class="badge"><i></i>Open to internships and freelance projects</span>
 <h1>Sneha Bindu Patapanchala</h1>
-<p class="lead">AI &amp; Data Science student who turns messy data and images into models people can trust, from titanium alloy microscopy at DRDO to kidney transplant risk prediction.</p>
-<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+<p class="role">AI &amp; Data Science · <span class="typed" id="typed">Freelance ML developer</span></p>
+<p class="lead">I turn messy data and images into models people can trust, from titanium alloy microscopy at DRDO to kidney transplant risk prediction. Available for your project, too.</p>
+<div class="btns"><a class="btn p" href="#projects">See my work</a><a class="btn" href="#contact">Hire me</a></div>
+</div>
+<div class="stage" id="stage" tabindex="0" role="img" aria-label="Interactive 3D neural-network model. Drag, or use the arrow keys, to rotate it.">
+<canvas id="gl" aria-hidden="true"></canvas>
+<!-- PHOTO: save your picture as photo.jpg next to this file and it will appear here automatically -->
+<figure class="photo">
+<svg viewBox="0 0 100 125" aria-hidden="true"><circle cx="50" cy="48" r="20" fill="currentColor" opacity=".25"/><path d="M12 125c0-30 16-44 38-44s38 14 38 44z" fill="currentColor" opacity=".25"/><text x="50" y="112" text-anchor="middle" font-size="7" font-family="sans-serif" fill="currentColor" opacity=".7">Your photo here</text></svg>
+<img src="photo.jpeg" alt="Portrait of Sneha Bindu Patapanchala" onerror="this.remove()">
+</figure>
+<span class="hint">Drag to rotate · click to pulse</span>
 </div>
 </header>
+<div class="stats">
+<div class="stat"><b>8.34</b><span>B.Tech CGPA</span></div><div class="stat"><b>2</b><span>Internships</span></div><div class="stat"><b>2</b><span>ML and web projects</span></div><div class="stat"><b>2nd</b><span>Prize, LBRCE hackathon</span></div>
+</div>
 
-<main>
-<section id="about">
+<section id="about" class="rv">
 <div class="sh"><h2>About me</h2><i></i></div>
 <div class="about">
-<p>I’m a B.Tech student in Artificial Intelligence and Data Science at Lakireddy Bali Reddy College of Engineering, Mylavaram. I work in Python on machine learning, computer vision and data analysis, and I care about models that can explain their predictions. Beyond coursework, I serve as Secretary of the Spoorthi Club and a member of the Student Council.</p>
-<div class="facts">
-<div><b>8.34</b><span>B.Tech CGPA</span></div>
-<div><b>2</b><span>Internships</span></div>
-<div><b>2</b><span>ML and web projects</span></div>
-<div><b>2nd</b><span>Prize, LBRCE hackathon</span></div>
+<div>
+<p>I’m a B.Tech student in Artificial Intelligence and Data Science at Lakireddy Bali Reddy College of Engineering, Mylavaram. I work in Python on machine learning, computer vision and data analysis, and I care about models that can explain their predictions.</p>
+<p>Beyond code, I paint, and I serve as Secretary of the Spoorthi Club and a member of the Student Council. That mix of creativity and teamwork shapes how I design and deliver work.</p>
+<div class="btns"><a class="btn p" href="mailto:psnehabindu11@gmail.com">Email me</a><a class="btn" href="https://raw.githubusercontent.com/SnehaBindu11/SnehaBindu11/main/Sneha_Resume.pdf">Download resume</a></div>
 </div>
+<div class="card"><h3>Goals</h3><p>Short term: a data science or machine learning role where I can apply my skills and learn from experienced people. Long term: building AI solutions that make a real difference.</p></div>
 </div>
 </section>
 
-<section id="experience">
+<section id="experience" class="rv">
 <div class="sh"><h2>Experience</h2><i></i></div>
 <ol class="tl">
-<li><div class="card">
-<div class="org"><h3>DRDO <span class="meta">· Research Intern, Bangalore</span></h3><span class="pill">May – June 2026</span></div>
-<ul>
-<li>Studied titanium alloy microstructures and how they relate to aerospace material properties.</li>
-<li>Built a computer vision pipeline to preprocess SEM images and extract texture and shape features, using Python, OpenCV and Scikit-learn.</li>
-<li>Supported machine learning model development for phase classification and material characterization.</li>
-</ul></div></li>
-<li><div class="card">
-<div class="org"><h3>APSSDC <span class="meta">· Data Analyst Intern, Remote</span></h3><span class="pill">May – July 2025</span></div>
-<ul>
-<li>Analyzed Andhra Pradesh election data to find voter behavior and party performance trends.</li>
-<li>Cleaned and visualized constituency and candidate data with Pandas, Matplotlib and Seaborn, surfacing vote shares and victory margins.</li>
-</ul></div></li>
+<li><div class="card"><div class="org"><h3>DRDO <span class="meta">· Research Intern, Bangalore</span></h3><span class="pill">May – June 2026</span></div>
+<ul><li>Studied titanium alloy microstructures and how they relate to aerospace material properties.</li><li>Built a computer vision pipeline to preprocess SEM images and extract texture and shape features, using Python, OpenCV and Scikit-learn.</li><li>Supported machine learning model development for phase classification and material characterization.</li></ul></div></li>
+<li><div class="card"><div class="org"><h3>APSSDC <span class="meta">· Data Analyst Intern, Remote</span></h3><span class="pill">May – July 2025</span></div>
+<ul><li>Analyzed Andhra Pradesh election data to find voter behavior and party performance trends.</li><li>Cleaned and visualized constituency and candidate data with Pandas, Matplotlib and Seaborn, surfacing vote shares and victory margins.</li></ul></div></li>
 </ol>
 </section>
 
-<section id="projects">
+<section id="projects" class="rv">
 <div class="sh"><h2>Projects</h2><i></i></div>
 <div class="grid2">
-<article class="card proj">
-<div class="band"></div>
-<div class="pb">
-<span class="pill">April 2026</span>
+<article class="card proj"><div class="band"></div><div class="pb"><span class="pill">April 2026</span>
 <h3 style="margin-top:12px">Kidney Transplant Graft Survival Prediction</h3>
 <ul class="tags"><li>Python</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>MICE</li><li>SMOTE</li></ul>
-<ul>
-<li>Built an ensemble machine learning pipeline on UNOS STAR registry data to predict 5-year kidney graft failure risk.</li>
-<li>Used SHAP for patient-level explanations, identifying donor age, HLA mismatch and cold ischemia time as key predictors of graft failure.</li>
-</ul></div>
-</article>
-<article class="card proj">
-<div class="band b2"></div>
-<div class="pb">
-<span class="pill">May 2026</span>
+<ul><li>Built an ensemble ML pipeline on UNOS STAR registry data to predict 5-year kidney graft failure risk.</li><li>Used SHAP for patient-level explanations, identifying donor age, HLA mismatch and cold ischemia time as key predictors.</li><li><a href="https://github.com/SnehaBindu11/miniproject">View on GitHub</a></li></ul></div></article>
+<article class="card proj"><div class="band b2"></div><div class="pb"><span class="pill">May 2026</span>
 <h3 style="margin-top:12px">SkillSync AI: Resume and Job Matching</h3>
 <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>NLP</li></ul>
-<ul>
-<li>Built a web app that uses NLP to match resumes against job descriptions and flag skill gaps.</li>
-<li>Delivers ATS-compatible scoring, keyword matching and personalized suggestions, plus downloadable PDF reports.</li>
-<li><a href="https://github.com/SnehaBindu11">View on GitHub</a></li>
-</ul></div>
-</article>
+<ul><li>Built a web app that uses NLP to match resumes against job descriptions and flag skill gaps.</li><li>Delivers ATS-compatible scoring, keyword matching, personalized suggestions and downloadable PDF reports.</li><li><a href="https://github.com/SnehaBindu11/AI-Resume-Screening-System">View on GitHub</a></li></ul></div></article>
 </div>
 </section>
 
-<section id="skills">
+<section id="services" class="rv">
+<div class="sh"><h2>Freelance services</h2><i></i></div>
+<div class="grid">
+<div class="card svc"><div class="ic" aria-hidden="true">🧠</div><h3>Machine learning models</h3><p>Prediction pipelines with data cleaning, class balancing, ensembles and SHAP explanations.</p></div>
+<div class="card svc"><div class="ic" aria-hidden="true">📊</div><h3>Data analysis and visuals</h3><p>Clean your data and turn it into clear charts and insights with Pandas, Matplotlib and Seaborn.</p></div>
+<div class="card svc"><div class="ic" aria-hidden="true">🔬</div><h3>Computer vision</h3><p>Image preprocessing and feature extraction pipelines with OpenCV and Scikit-learn.</p></div>
+<div class="card svc"><div class="ic" aria-hidden="true">💻</div><h3>Web apps and NLP tools</h3><p>Responsive sites and small AI web tools in HTML, CSS and JavaScript, like my SkillSync app.</p></div>
+</div>
+<h3 class="sans" style="margin:34px 0 14px;font-size:22px">How we’ll work together</h3>
+<ol class="steps"><li><b>Discuss</b><span>Tell me your goal and your data.</span></li><li><b>Scope</b><span>We agree on deliverables and timeline.</span></li><li><b>Build</b><span>I share progress and take feedback.</span></li><li><b>Deliver</b><span>Clean code, documentation and a handover.</span></li></ol>
+</section>
+
+<section id="skills" class="rv">
 <div class="sh"><h2>Skills</h2><i></i></div>
-<div class="skills">
+<div class="grid">
 <div class="card"><h3>Programming</h3><ul class="chips"><li>Python</li><li>Java</li><li>C</li></ul></div>
 <div class="card"><h3>Web</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
 <div class="card"><h3>Databases</h3><ul class="chips"><li>SQL</li></ul></div>
@@ -183,59 +204,105 @@ footer{padding:48px 5vw;text-align:center;color:var(--muted);font-size:15px}
 </div>
 </section>
 
-<section id="education">
-<div class="sh"><h2>Education</h2><i></i></div>
-<div class="edu">
+<section id="education" class="rv">
+<div class="sh"><h2>Education and recognition</h2><i></i></div>
+<div class="grid edu">
 <div class="card"><h3>B.Tech, AI &amp; Data Science</h3><p>Lakireddy Bali Reddy College of Engineering</p><div class="score">8.34</div><p>CGPA · Pursuing</p></div>
 <div class="card"><h3>Intermediate</h3><p>Sri Bhavishya Junior College</p><div class="score">9.09</div><p>CGPA · March 2023</p></div>
 <div class="card"><h3>S.S.C</h3><p>Bhashyam EM High School</p><div class="score">10</div><p>CGPA · June 2021</p></div>
 </div>
-</section>
-
-<section id="more">
-<div class="sh"><h2>Recognition and leadership</h2><i></i></div>
-<div class="grid2">
-<div class="card rec"><h3>Certifications</h3><ul>
-<li>Infosys Springboard, HTML (Apr 2025)</li>
-<li>Infosys Springboard, Python Fundamentals (Oct 2024)</li>
-<li>HackerRank, Java Basic (Oct 2024)</li></ul></div>
-<div class="card rec"><h3>Achievements</h3><ul>
-<li>Second prize, hackathon at LBRCE</li>
-<li>Second prize, painting competition at LBRCE</li></ul></div>
-<div class="card rec"><h3>Positions of responsibility</h3><ul>
-<li>Secretary, Spoorthi Club, LBRCE (Aug 2025 – Aug 2026)</li>
-<li>Student Member, Student Council, LBRCE (Aug 2025 – Aug 2026)</li></ul></div>
+<div class="grid" style="margin-top:22px">
+<div class="card"><h3>Certifications</h3><ul><li>Infosys Springboard, HTML (Apr 2025)</li><li>Infosys Springboard, Python Fundamentals (Oct 2024)</li><li>HackerRank, Java Basic (Oct 2024)</li></ul></div>
+<div class="card"><h3>Achievements</h3><ul><li>Second prize, hackathon at LBRCE</li><li>Second prize, painting competition at LBRCE</li></ul></div>
+<div class="card"><h3>Leadership</h3><ul><li>Secretary, Spoorthi Club, LBRCE</li><li>Student Member, Student Council, LBRCE</li></ul></div>
 </div>
 </section>
 
 <section id="contact" style="padding-top:0">
 <div class="cta">
-<h2>Let’s work together</h2>
-<p>I’m open to internships and entry-level roles in machine learning and data science. Send me a message and I’ll reply soon.</p>
-<div class="btns">
-<a class="btn" href="mailto:psnehabindu11@gmail.com">Email me</a>
-<a class="btn o" href="https://linkedin.com/in/snehabindu-patapanchala-1a3947294">LinkedIn</a>
-<a class="btn o" href="https://github.com/SnehaBindu11">GitHub</a>
-<a class="btn o" href="tel:+917416429111">+91-7416429111</a>
-</div></div>
+<div><h2>Let’s build something together</h2><p>Hiring for an internship, or have a freelance project in mind? Send me a note and I’ll reply soon.</p>
+<div class="btns"><a class="btn w" href="mailto:psnehabindu11@gmail.com">psnehabindu11@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sneha-bindu-patapanchala-0a136939b/" target="blank">LinkedIn</a><a class="btn" href="https://github.com/SnehaBindu11 target="blank"  ">GitHub</a></div></div>
+<div class="fm">
+<label>Your name<input id="fn" autocomplete="name"></label>
+<label>Your email<input id="fe" type="email" autocomplete="email"></label>
+<input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+<label>I’m looking for<select id="ft"><option>A freelance project</option><option>An internship or job</option><option>Something else</option></select></label>
+<label>Message<textarea id="fmsg" rows="3"></textarea></label>
+<button class="btn w" type="button" id="send">Send message</button>
+<p id="fs" role="status" aria-live="polite" style="margin:0;font:600 14px 'Bricolage Grotesque',sans-serif"></p>
+</div>
+</div>
 </section>
 </main>
-<footer>© 2026 Sneha Bindu Patapanchala</footer>
+<footer>© 2026 Sneha Bindu Patapanchala · AI &amp; Data Science</footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
-var c=document.getElementById('grains'),W=180,H=110;c.width=W;c.height=H;
-var x=c.getContext('2d'),n=70,s=[],i,px,py;
-var dark=matchMedia('(prefers-color-scheme:dark)').matches&&document.documentElement.dataset.theme!=='light';
-for(i=0;i<n;i++)s.push([Math.random()*W,Math.random()*H,Math.random()]);
-var id=new Int16Array(W*H),img=x.createImageData(W,H);
-for(py=0;py<H;py++)for(px=0;px<W;px++){var b=0,bd=1e9;
-for(i=0;i<n;i++){var dx=px-s[i][0],dy=py-s[i][1],d=dx*dx+dy*dy;if(d<bd){bd=d;b=i}}
-id[py*W+px]=b}
-for(py=0;py<H;py++)for(px=0;px<W;px++){var k=py*W+px,g=id[k],edge=(px<W-1&&id[k+1]!==g)||(py<H-1&&id[k+W]!==g);
-var v=dark?(edge?20:40+s[g][2]*50):(edge?120:200+s[g][2]*40);
-var o=k*4;img.data[o]=v*.93;img.data[o+1]=v*.97;img.data[o+2]=v;img.data[o+3]=255}
-x.putImageData(img,0,0);
+var root=document.documentElement;
+document.getElementById('theme').onclick=function(){var d=getComputedStyle(root).getPropertyValue('--bg').trim()==='#0e1420';root.dataset.theme=d?'light':'dark';paint()};
+document.getElementById('send').onclick=function(){sendMsg()};
+function sendMsg(){var f=function(i){return document.getElementById(i)},n=f('fn').value.trim(),e=f('fe').value.trim(),t=f('ft').value,m=f('fmsg').value.trim(),s=f('fs'),b=f('send');
+if(f('hp').value)return;
+if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){s.textContent='Please fill in your name, a valid email and a message.';return}
+b.disabled=true;s.textContent='Sending…';
+fetch('https://formsubmit.co/ajax/psnehabindu11@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({name:n,email:e,_replyto:e,_subject:'Portfolio message: '+t,topic:t,message:m,_template:'table',_captcha:'false'})})
+.then(function(r){return r.json()}).then(function(d){if(d.success==='true'||d.success===true){s.textContent='Thank you! Your message was sent.';f('fn').value=f('fe').value=f('fmsg').value=''}else throw 0})
+.catch(function(){s.textContent='Could not send directly, so I opened your email app instead.';legacy()}).then(function(){b.disabled=false})}
+function legacy(){var n=document.getElementById('fn').value,t=document.getElementById('ft').value,m=document.getElementById('fmsg').value;
+location.href='mailto:psnehabindu11@gmail.com?subject='+encodeURIComponent(t+' – '+n)+'&body='+encodeURIComponent(m+'\n\n'+n)};
+var io=window.IntersectionObserver&&new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.rv').forEach(function(el){io?io.observe(el):el.classList.add('on')});
+
+var fine=matchMedia('(hover:hover) and (pointer:fine)').matches,calm0=matchMedia('(prefers-reduced-motion:reduce)').matches,bar=document.getElementById('bar'),gl=document.getElementById('glow'),sc=0;
+addEventListener('scroll',function(){var h=root.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')';sc=scrollY/innerHeight},{passive:true});
+document.querySelectorAll('.rv').forEach(function(s){s.querySelectorAll('.grid>*,.grid2>*,.steps>li,.tl>li').forEach(function(el,i){el.style.setProperty('--i',i%6)})});
+var links=document.querySelectorAll('nav a[href^="#"]');
+if(window.IntersectionObserver){var sp=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('section[id]').forEach(function(s){sp.observe(s)});
+document.querySelectorAll('.stat b').forEach(function(b){var raw=b.textContent,end=parseFloat(raw),dec=(raw.split('.')[1]||'').length,done=false;if(!/^[\d.]+$/.test(raw)||calm0)return;b.textContent=(0).toFixed(dec);
+new IntersectionObserver(function(es,o){if(!es[0].isIntersecting||done)return;done=true;o.disconnect();var t0=performance.now();(function f(n){var p=Math.min((n-t0)/1400,1),e=1-Math.pow(1-p,3);b.textContent=(end*e).toFixed(dec);if(p<1)requestAnimationFrame(f)})(t0)}).observe(b)})}
+var ty=document.getElementById('typed'),ws=['Freelance ML developer','Computer vision builder','Data storyteller','Web app creator'];
+if(ty&&!calm0){var wi=0,ci=0,del=false;(function tick(){var w=ws[wi],d=del?35:70;ci+=del?-1:1;ty.textContent=w.slice(0,ci);if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;wi=(wi+1)%ws.length;d=300}setTimeout(tick,d)})()}
+if(fine&&!calm0){var gx=0,gy=0,tx=0,tq=0;addEventListener('pointermove',function(e){tx=e.clientX;tq=e.clientY;gl.style.opacity=1},{passive:true});
+(function g(){gx+=(tx-gx)*.12;gy+=(tq-gy)*.12;gl.style.transform='translate('+gx+'px,'+gy+'px)';requestAnimationFrame(g)})();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(800px) rotateX('+(-y*7)+'deg) rotateY('+(x*9)+'deg) translateY(-4px)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+document.querySelectorAll('.btn').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.35)+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})})}
+var st=document.getElementById('stage'),cv=document.getElementById('gl'),R,paint=function(){};
+if(!window.THREE)return;
+try{R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true})}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(40,1,.1,50),G=new THREE.Group();C.position.z=8;S.add(G);
+var geo=new THREE.IcosahedronGeometry(2.1,1);
+var wire=new THREE.LineSegments(new THREE.WireframeGeometry(geo),new THREE.LineBasicMaterial({transparent:true,opacity:.6}));
+var pts=new THREE.Points(geo,new THREE.PointsMaterial({size:.16}));
+var core=new THREE.Mesh(new THREE.IcosahedronGeometry(1,0),new THREE.MeshBasicMaterial({wireframe:true}));
+var rings=[0,1,2].map(function(i){var m=new THREE.Mesh(new THREE.TorusGeometry(2.9+i*.35,.014,8,140),new THREE.MeshBasicMaterial({transparent:true,opacity:.75}));m.rotation.set(i*1.1,i*.7,0);return m});
+G.add(wire,pts,core);rings.forEach(function(r){G.add(r)});
+var dg=new THREE.BufferGeometry(),da=[],k;for(k=0;k<300;k++){var u=Math.random()*6.28,v=Math.acos(2*Math.random()-1),rr=4+Math.random()*3;da.push(rr*Math.sin(v)*Math.cos(u),rr*Math.sin(v)*Math.sin(u),rr*Math.cos(v))}
+dg.setAttribute('position',new THREE.Float32BufferAttribute(da,3));
+var dust=new THREE.Points(dg,new THREE.PointsMaterial({size:.06,transparent:true,opacity:.7}));S.add(dust);
+function col(n){return new THREE.Color(getComputedStyle(root).getPropertyValue(n).trim())}
+paint=function(){dust.material.color=col('--accent');wire.material.color=col('--accent');pts.material.color=col('--teal');core.material.color=col('--rose');
+rings[0].material.color=col('--teal');rings[1].material.color=col('--accent');rings[2].material.color=col('--ochre')};
+paint();
+matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){setTimeout(paint,0)});
+function size(){var w=st.clientWidth,h=st.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+var rx=.25,ry=0,vx=0,vy=0,mx=0,my=0,drag=false,lx,ly,sx=0,sy0=0,burst=0,vis=true,calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+st.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;sx=e.clientX;sy0=e.clientY;try{st.setPointerCapture(e.pointerId)}catch(x){}});
+st.addEventListener('pointermove',function(e){var r=st.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;
+if(drag){vy=(e.clientX-lx)*.008;vx=(e.clientY-ly)*.008;lx=e.clientX;ly=e.clientY}});
+['pointerup','pointercancel'].forEach(function(n){st.addEventListener(n,function(e){if(drag&&n==='pointerup'&&Math.hypot(e.clientX-sx,e.clientY-sy0)<6)burst=1;drag=false})});
+st.addEventListener('pointerleave',function(){mx=0;my=0});
+st.addEventListener('keydown',function(e){var k={ArrowLeft:[0,-.12],ArrowRight:[0,.12],ArrowUp:[-.12,0],ArrowDown:[.12,0]}[e.key];if(k){vx=k[0];vy=k[1];e.preventDefault()}});
+if(io){new IntersectionObserver(function(es){vis=es[0].isIntersecting}).observe(st)}
+var t0=performance.now();
+(function loop(now){requestAnimationFrame(loop);if(!vis||document.hidden)return;
+var t=(now-t0)/1000;ry+=vy+(calm?0:.004);rx=Math.max(-1.2,Math.min(1.2,rx+vx));vx*=.92;vy*=.92;
+burst*=.95;G.rotation.set(rx+my*.35,ry+mx*.35+sc*1.6,0);G.scale.setScalar(1+burst*.22);if(!calm){dust.rotation.y-=.0008;dust.rotation.x+=.0004}
+rings.forEach(function(r,i){r.rotation.z+=(calm?0:.004*(i+1))+burst*.09});
+core.rotation.y-=calm?0:.01;var s=1+(calm?0:Math.sin(t*1.6)*.05);core.scale.setScalar(s);
+R.render(S,C)})(t0);
 })();
 </script>
 </body>
